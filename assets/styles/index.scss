@@ -36,12 +36,24 @@ h2 {
   padding: 0;
   text-align: center;
 }
-//
-// h3 {
-//   a {
-//     left: 0;
-//   }
-// }
+
+
+.about-me-div {
+  // align-self: center;
+  // display: flex;
+  // justify-content: center;
+  font-size: 1.5rem;
+  min-width: 40rem;
+  padding: 0 20rem;
+  text-align: justify;
+  width: 100%;
+}
+
+h3 {
+  a {
+    left: 0;
+  }
+}
 
 .button {
   background-color: lighten($silver, 10%);
