@@ -12,7 +12,7 @@ $dark-purple: #2e034b;
 $purple: #5b158b;
 $grey: #dedcdc;
 $silver: #c0c0c0;
-$nav-color: #848c87;
+$nav-color: #CCCCBF;
 $white-tint: #f6f6f6;
 // $heading: #e9e7eb;
 
@@ -23,15 +23,19 @@ a {
 body {
   background-color: $white-tint;
   color: $dark-purple;
+  overflow-x: hidden;
   padding-top: $sticky-shrinknav-hero-height + 30px;
   // padding-top: $contact-info-header-height + 30;
-  width: 100vw;
+}
+
+h1 {
+  letter-spacing: .2rem;
 }
 
 h2 {
   border: 0;
   color: darken($silver, 4%);
-  font-size: 4em;
+  font-size: 5.5rem;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -43,10 +47,10 @@ h2 {
   // display: flex;
   // justify-content: center;
   font-size: 1.5rem;
-  min-width: 40rem;
-  padding: 0 20rem;
+  min-width: 30rem;
+  padding: 0 25%;
   text-align: justify;
-  width: 100%;
+  // width: 100%;
 }
 
 h3 {
@@ -62,6 +66,8 @@ h3 {
 
 .sticky-shrinknav-wrapper {
   padding-top: 130px;
+  // max-width: 100vw;
+  width: 99vw;
 
   .sticky-shrinknav-header{
     background-color: rgba($nav-color, 0.8);
@@ -90,11 +96,12 @@ h3 {
   transition: all .3s ease;
 }
 
-.typed {
+.contact-info-headline {
   border: 0;
   color: $dark-purple;
   font-size: 2.5em;
-  // transform: translateY(-$sticky-shrinknav-menu-height/2);
+  letter-spacing: .1rem;
+  transform: translateY(-$sticky-shrinknav-menu-height/2);
 }
 
 .sticky-shrinknav-header {
@@ -181,6 +188,14 @@ h3 {
   }
 }
 
+section {
+  padding-bottom: 7rem;
+}
+
+.project {
+  padding: 0 5rem 5rem 5rem;
+}
+
 .project-description {
   font-size: 1.25rem;
   // font-style: Futura;
@@ -227,7 +242,7 @@ h3 {
 }
 
 .technologies-list {
-  padding-bottom: 7rem;
+  // padding-bottom: 7rem;
 
   i,
   img {
@@ -247,5 +262,5 @@ footer {
   height: 5rem;
   line-height: $sticky-shrinknav-menu-height;
   text-align: center;
-  // width: 100%;
+  width: 100vw;
 }
