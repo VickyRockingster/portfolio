@@ -6,7 +6,7 @@
 import 'bootstrap'
 import 'foundation-sites'
 import 'devicon'
-import './foundation-icons/foundation-icons.css'
+import 'foundation-icons/foundation-icons.css'
 
 // allows usage of new JS features
 require('babel-polyfill')
