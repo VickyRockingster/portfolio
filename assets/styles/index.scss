@@ -2,20 +2,22 @@
 @import '~foundation-sites/dist/css/foundation.css';
 @import '~foundation-sites/scss/foundation';
 @import '~devicon/devicon.min.css';
-@import '../../foundation-icons/foundation-icons.css';
+@import './foundation-icons/foundation-icons.css';
 
 $sticky-shrinknav-menu-height: 5rem;
 // $sticky-shrinknav-menu-height: rem-calc(60);
 $sticky-shrinknav-hero-height: 300px;
-// $contact-info-header-height: 250px;
-// $menu-underline-from-center-bg: #2c3840;
 $menu-underline-from-center-border-thickness: .25rem;
 $dark-purple: #2e034b;
-$purple: #5b158b;
-$grey: #dedcdc;
+$purple: lighten($dark-purple, 7%);
+// $purple: #5b158b;
+// $grey: #dedcdc;
+
 $silver: #c0c0c0;
-$nav-color: #ccccbf;
-$white-tint: #f6f6f6;
+$nav-footer-color: $silver;
+
+$background-color: lighten($dark-purple, 85%);
+// $background-color: lighten($silver, 10%);
 // $heading: #e9e7eb;
 
 a {
@@ -23,21 +25,23 @@ a {
 }
 
 body {
-  background-color: $white-tint;
-  color: $dark-purple;
+  background-color: $background-color;
+  // color: $dark-purple;
   overflow-x: hidden;
   padding-top: $sticky-shrinknav-hero-height + 30px;
   // padding-top: $contact-info-header-height + 30;
 }
 
 h1 {
+  color: $dark-purple;
   letter-spacing: .2rem;
 }
 
 h2 {
   border: 0;
-  color: darken($silver, 4%);
-  font-size: 5.5rem;
+  // color: $silver;
+  color: $dark-purple;
+  font-size: 3.5rem;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -62,7 +66,7 @@ h3 {
 }
 
 .button {
-  background-color: lighten($silver, 10%);
+  // background-color: lighten($silver, 10%);
   color: $purple;
 }
 
@@ -72,7 +76,7 @@ h3 {
   width: 99vw;
 
   .sticky-shrinknav-header{
-    background-color: rgba($nav-color, 0.8);
+    background-color: rgba($nav-footer-color, 0.9);
     height: $sticky-shrinknav-menu-height;
 
     .sticky-shrinknav-header-title {
@@ -108,7 +112,8 @@ h3 {
 
 .sticky-shrinknav-header {
   align-items: center;
-  background-color: lighten($silver, 17%);
+  background-color: lighten($silver, 15%);
+  // background-color: $silver;
   display: flex;
   flex-flow: column nowrap;
   height: $sticky-shrinknav-hero-height;
@@ -195,7 +200,7 @@ section {
 }
 
 .project {
-  padding: 0 5rem 5rem 5rem;
+  padding: 0 3rem 3rem 3rem;
 }
 
 .project-description {
@@ -230,14 +235,16 @@ section {
     text-decoration: none;
   }
 
-    .button.hollow {
-      border: 1.5px solid $purple;
-      color: $purple;
+  .button.hollow {
+    border: 1.5px solid $purple;
+    border-radius: .5rem;
+    color: $purple;
 
     &:hover {
-      border: 2px solid $dark-purple;
-      font-size: 1.75rem;
-      font-weight: 300;
+      background-color: lighten($silver, 15%);
+      border: 1.7px solid $dark-purple;
+      font-size: 1.5rem;
+      font-weight: 500;
       transition: .3s ease;
     }
   }
@@ -260,7 +267,7 @@ section {
 
 footer {
   align-content: center;
-  background-color: lighten($silver, 10%);
+  background-color: $nav-footer-color;
   height: 5rem;
   line-height: $sticky-shrinknav-menu-height;
   text-align: center;
