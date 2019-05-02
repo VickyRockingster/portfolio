@@ -5,7 +5,7 @@
 
 // import 'bootstrap'
 import 'foundation-sites'
-import 'devicon'
+// import 'devicon'
 
 // allows usage of new JS features
 require('babel-polyfill')
