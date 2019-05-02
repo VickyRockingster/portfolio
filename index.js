@@ -4,7 +4,7 @@
 // var example = require('./example');
 
 // import 'bootstrap'
-import 'foundation-sites'
+// import 'foundation-sites'
 // import 'devicon'
 
 // allows usage of new JS features
