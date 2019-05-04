@@ -67,7 +67,9 @@ module.exports = {
               loader: 'sass-loader',
               options: {
                 includePaths: [
-                  path.resolve(__dirname, './node_modules')
+                  path.resolve(__dirname, './node_modules'),
+                  path.resolve(__dirname, './assets/styles/foundation-icons/*'),
+                  path.resolve(__dirname, './node_modules/devicon/*')
                 ]
               }
             }]
