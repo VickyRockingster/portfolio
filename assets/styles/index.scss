@@ -6,8 +6,8 @@
 @import '~foundation-icons/foundation-icons';
 
 // $sticky-shrinknav-menu-height: 5rem;
-$sticky-shrinknav-menu-height: rem-calc(70);
-$sticky-shrinknav-hero-height: 270px;
+$sticky-shrinknav-menu-height: rem-calc(60);
+$sticky-shrinknav-hero-height: 210px;
 $menu-underline-from-center-border-thickness: .25rem;
 $dark-purple: #2e034b;
 $purple: lighten($dark-purple, 7%);
@@ -30,6 +30,32 @@ body {
   overflow-x: hidden;
   padding-top: $sticky-shrinknav-hero-height + 30px;
 }
+
+.background-image {
+  background: url('https://i.imgur.com/vhTi2jx.jpg');
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  // background-size: cover;
+  background-repeat: repeat;
+}
+// <div class="test-image">
+//   <div class="image-overlay">
+//   </div>
+// </div>
+// .image-overlay {
+//   width: 100%;
+//   height: 100%;
+//   background-color: rgba(0, 0, 0, 0.5);
+// }
+// .test-image {
+//
+//   background-image: url('./computer.jpg');
+//   background-size: cover;
+//   background-repeat: no-repeat;
 
 h1 {
   color: $dark-purple;
@@ -91,8 +117,7 @@ h2 {
 
 .sticky-shrinknav-wrapper {
   padding-top: 130px;
-  // max-width: 100vw;
-  width: 99vw;
+  width: 100%;
 
   .sticky-shrinknav-header {
     background-color: rgba($nav-footer-color, 0.9);
@@ -109,10 +134,10 @@ h2 {
 
 .sticky-shrinknav-header-title {
   border: 0;
-  font-size: 4em;
+  font-size: 3em;
   // max-height: calc(100% / 4);
   margin: 0;
-  min-width: 600px;
+  // min-width: 600px;
   // overflow: hidden;
   padding: 0;
   // padding-top: 40px;
@@ -123,10 +148,10 @@ h2 {
   transition: all .3s ease;
 }
 
-.contact-info-headline {
+.contact-info-headline-h2 {
   border: 0;
   color: $dark-purple;
-  font-size: 2.5em;
+  font-size: 2em;
   letter-spacing: .1rem;
   transform: translateY(-$sticky-shrinknav-menu-height/2);
 }
@@ -142,62 +167,66 @@ h2 {
   left: 0;
   overflow: hidden;
   position: fixed;
-  text-align: center;
+  // text-align: center;
   top: 0;
   transition: all .5s ease;
   width: 100%;
 }
 
-.sticky-shrinknav-menu {
-  @include horizontal-center;
-  bottom: 1rem;
-  width: 100%;
+// .sticky-shrinknav-menu {
+  // border: solid;
+  // margin-bottom: 0;
   // height: 5rem;
   // line-height: 5rem;
   // background-color: rgba($primary-color, 0.1);
   // transition: all .5s ease;
-}
+// }
 
-.hover-underline-menu {
   .menu {
-    font-size: 2rem;
+    @include horizontal-center;
+    bottom: .5rem;
+    font-size: 1.5rem;
     transition: all .9s ease;
     // border-bottom: 0;
-    // display: flex;
-    // flex-flow: row nowrap;
+    display: flex;
+    flex-flow: row nowrap;
     // justify-content: space-around;
-    // list-style-type: none;
-    // width: 100%;
+    width: 100%;
 
     a {
       color: $purple;
-      // border-radius: 2px;
-      // text-decoration: none;
+      padding-bottom: .5rem;
 
-      // span {
-      //   // padding: .5rem;
+      span {
+        padding: .5rem;
       //   // @media screen and (max-width: 1150px) {
       //   //   display: none;
       //   // }
-      // }
+      }
     }
-  }
-}
 
-.underline-from-center {
-  position: relative;
+    .underline-from-center {
+      position: relative;
 
-  &::after {
-    border-bottom: $menu-underline-from-center-border-thickness solid $dark-purple;
-    // border: solid;
-    content: '';
-    left: 50%;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    right: 50%;
-    top: calc(100% - #{$menu-underline-from-center-border-thickness});
-    transition: all .3s ease;
+      &::after {
+        border-bottom: $menu-underline-from-center-border-thickness solid $dark-purple;
+        content: '';
+        left: 50%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        right: 50%;
+        top: calc(100% - #{$menu-underline-from-center-border-thickness});
+        transition: all .3s ease;
+
+      }
+
+      &:hover::after {
+        left: 0;
+        right: 0;
+        transition: all .5s ease;
+      }
+    }
   }
 
   h3 {
@@ -217,13 +246,6 @@ h2 {
   .button {
     // background-color: lighten($silver, 10%);
     color: $purple;
-  }
-
-  &:hover::after {
-    left: 0;
-    right: 0;
-    transition: all .5s ease;
-  }
 }
 
 .project {
