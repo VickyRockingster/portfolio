@@ -27,21 +27,24 @@ a {
 
 body {
   // background-color: purple;
+  // background: url('https://i.imgur.com/op7S0oi.jpg');
+  // background-repeat: no-repeat;
   overflow-x: hidden;
   padding-top: $sticky-shrinknav-hero-height + 30px;
 }
 
-.background-image {
-  background: url('https://i.imgur.com/vhTi2jx.jpg');
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  // background-size: cover;
-  background-repeat: repeat;
-}
+// .background-image {
+//   // background: url('https://i.imgur.com/vhTi2jx.jpg');
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   width: 100vw;
+//   height: 100vh;
+//   background-size: cover;
+//   // background-repeat: no-repeat;
+//   // position: fixed;
+// }
 // <div class="test-image">
 //   <div class="image-overlay">
 //   </div>
