@@ -12,7 +12,7 @@
     "devicon": "^2.2.0",
     "foundation-icons": "^1.0.1",
     "foundation-sites": "^6.5.3",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "popper.js": "^1.14.3",
     "typeit": "^6.0.2"
   },
